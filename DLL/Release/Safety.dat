@@ -1,0 +1,36 @@
+[Default]
+Location Adjust=0
+Watch Malah HP=1
+Watch Malah MP=1
+Watch Alert HP=1
+Watch Alert MP=1
+Watch Potion HP=1
+Watch Potion MP=1
+Watch Potion Merc=1
+Malah HP=90
+Malah MP=75
+Alert HP=50
+Alert MP=15
+Potion HP=80
+Potion MP=50
+Potion Merc=75
+Watch Merc=1
+Avoid Combo=
+[new sor]
+Location Adjust=0
+Watch Malah HP=1
+Watch Malah MP=1
+Watch Alert HP=1
+Watch Alert MP=1
+Watch Potion HP=1
+Watch Potion MP=1
+Watch Potion Merc=1
+Malah HP=90
+Malah MP=75
+Alert HP=50
+Alert MP=10
+Potion HP=80
+Potion MP=20
+Potion Merc=60
+Watch Merc=0
+Avoid Combo=

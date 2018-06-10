@@ -1,0 +1,742 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 209, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于..."
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,12,11,20,20
+    LTEXT           "<>",IDC_TITLE,40,10,107,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2003，Abin",IDC_STATIC,40,22,107,8
+    DEFPUSHBUTTON   "确定",IDOK,152,7,50,14,WS_GROUP
+    LTEXT           "给我写信",IDC_ABIN,40,59,74,9,NOT WS_GROUP
+    LTEXT           "Cure-Team论坛",IDC_CURETEAM,40,34,89,8,NOT WS_GROUP
+    LTEXT           "Abin的Diablo II工具箱",IDC_HOMEPAGE,40,46,89,9,NOT 
+                    WS_GROUP
+END
+
+IDD_PINDLEBOT_DIALOG DIALOGEX 0, 0, 9, 0
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "Pindlebot 3.48 for SIG"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_LOGINDLG DIALOG DISCARDABLE  0, 0, 214, 255
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "一般"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "控制",IDC_STATIC,7,7,200,46
+    CONTROL         "允许自动复活雇佣兵。",IDC_RESMERC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,38,94,8
+END
+
+IDD_PICKITDLG DIALOGEX 0, 0, 214, 255
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "物品取舍"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "当前配置文件:",IDC_STATIC,7,10,52,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_FILE,60,7,102,15,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "另选文件",IDC_SELECTFILE,163,7,44,15
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_TABSTOP,7,26,200,181,WS_EX_STATICEDGE
+    PUSHBUTTON      "刷新列表",IDC_REFRESH,73,89,67,15
+    PUSHBUTTON      "修改文件内容",IDC_MODIFYINI,71,233,67,15
+    LTEXT           "注意：物品取舍的更改在你点击物品选择框后立即生效，与你是否点击""OK""按钮无关！",
+                    IDC_STATIC,7,211,200,18
+END
+
+CG_IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 186, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,67,47,50,14
+    CONTROL         "Progress1",CG_IDC_PROGDLG_PROGRESS,"msctls_progress32",
+                    WS_BORDER,15,34,154,8
+    LTEXT           " 0 %",CG_IDC_PROGDLG_PERCENT,85,23,18,8
+    LTEXT           "",CG_IDC_PROGDLG_STATUS,13,7,158,8
+END
+
+IDD_STATISTICSDLG DIALOGEX 0, 0, 179, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "当前运行结果统计"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "关闭(&C)",IDCANCEL,62,192,56,16
+    LTEXT           "已完成游戏数：",IDC_STATIC,7,22,65,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "99999",IDC_TOTALGAMES,91,21,52,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "猎杀成功次数：",IDC_STATIC,7,52,57,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "99999",IDC_PINDLEKILLED,91,52,71,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "负伤撤退次数：",IDC_STATIC,7,82,62,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "99999",IDC_RETREATED,91,82,68,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "角色死亡次数：",IDC_STATIC,7,97,62,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "99999",IDC_CHARDIED,91,97,68,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "雇佣兵死亡次数：",IDC_STATIC,7,112,67,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "99999",IDC_MERCDIED,91,112,68,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "有效游戏内时间：",IDC_STATIC,7,7,65,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "99999",IDC_TOTALTIME,91,7,81,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "提前逃避次数：",IDC_STATIC,7,67,62,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "99999",IDC_DEADLYCOMBO,91,67,68,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "技能不足次数：",IDC_STATIC,7,127,61,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "99999",IDC_INSUFFICIENTSKILL,91,127,68,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "平均效率：",IDC_STATIC,7,37,47,9,0,WS_EX_TRANSPARENT
+    LTEXT           "?%",IDC_NETEFFECTIVE,91,37,62,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "提示：在游戏中按""F9""键也能查看统计。",IDC_STATIC,7,
+                    174,155,11
+    LTEXT           "角色喝掉紫药水：",IDC_STATIC,7,142,67,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "99999",IDC_POTIONDRUNK,91,142,68,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "雇佣兵喝掉紫药水：",IDC_STATIC,7,157,76,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "99999",IDC_POTIONMERC,91,157,68,9,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT
+END
+
+IDD_ITEMLOGDLG DIALOGEX 0, 0, 311, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "物品纪录"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,7,7,297,166,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "关闭(&C)",IDCANCEL,192,178,55,16
+    PUSHBUTTON      "复制到剪贴板(&B)",IDC_COPYTOCLIPBOARD,66,178,71,16,
+                    WS_DISABLED
+    PUSHBUTTON      "清空(&L)",IDC_CLEAR,137,178,55,16
+END
+
+IDD_CHARCLASSDLG DIALOGEX 0, 0, 214, 255
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "角色"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_CHARLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_TABSTOP,7,7,200,155,WS_EX_STATICEDGE
+    PUSHBUTTON      "新增",IDC_NEWCHAR,35,169,44,14
+    PUSHBUTTON      "编辑",IDC_EDITCHAR,80,169,44,14,WS_DISABLED
+    PUSHBUTTON      "删除",IDC_DELCHAR,124,169,44,14,WS_DISABLED
+    GROUPBOX        "技能方案<>",IDC_SKILLSCHEME,7,194,200,54
+    PUSHBUTTON      "进入红门之前",IDC_BEFORERED,14,208,91,16,WS_DISABLED
+    PUSHBUTTON      "进入红门之后",IDC_AFTERRED,105,208,91,16,WS_DISABLED
+    PUSHBUTTON      "到达Pindleskin面前",IDC_ONPINDLESKIN,14,224,91,16,
+                    WS_DISABLED
+    PUSHBUTTON      "地上有尸体出现时",IDC_ONCORPOSE,105,224,91,16,
+                    WS_DISABLED
+END
+
+IDD_NEWCHARDLG DIALOGEX 0, 0, 233, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "角色概况"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "角色名：",IDC_STATIC,7,9,43,12
+    EDITTEXT        IDC_CHARNAME,53,7,133,13,ES_AUTOHSCROLL
+    LTEXT           "注意：角色名必须与实际相符，务请拼写正确，否则程序将无法正常运作。",
+                    IDC_STATIC,7,27,219,20
+    LTEXT           "角色职业：",IDC_STATIC,7,53,44,8
+    COMBOBOX        IDC_COMBO1,53,51,133,120,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "安全方案：",IDC_STATIC,7,70,44,10
+    COMBOBOX        IDC_SAFETYSCHEMES,53,69,133,120,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "消耗性武器(弓弩)",IDC_STATIC,7,89,219,58
+    CONTROL         "无",IDC_AMMO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,
+                    105,24,9
+    CONTROL         "Arrow",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,80,105,35,
+                    10
+    CONTROL         "Bolt",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,156,105,32,
+                    10
+    LTEXT           "每次购买数量：",IDC_STATIC,15,125,58,10
+    EDITTEXT        IDC_AMMOBUYQTY,77,123,31,14,ES_AUTOHSCROLL
+    LTEXT           "袋(仅适用于Arrow或Bolt)",IDC_STATIC,113,125,106,9
+    DEFPUSHBUTTON   "确定(&K)",IDOK,66,158,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,116,158,50,14
+END
+
+IDD_ACTIONLISTDLG DIALOGEX 0, 0, 291, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,277,119
+    PUSHBUTTON      "上移(&U)",IDC_MOVEUP,26,135,38,14,WS_DISABLED
+    PUSHBUTTON      "下移(&D)",IDC_MOVEDOWN,64,135,38,14,WS_DISABLED
+    PUSHBUTTON      "添加(&A)",IDC_ADDACTION,113,135,38,14
+    PUSHBUTTON      "删除(&R)",IDC_REMOVEACTION,151,135,38,14,WS_DISABLED
+    PUSHBUTTON      "更改(&E)",IDC_EDITACTION,189,135,38,14,WS_DISABLED
+    DEFPUSHBUTTON   "关闭(&O)",IDOK,227,135,38,14
+    ICON            150,IDC_STATIC,13,157,20,20,SS_REALSIZEIMAGE
+    LTEXT           "程序将按照自上而下的顺序执行列表中所有的技能。",
+                    IDC_STATIC,25,160,225,11,0,WS_EX_TRANSPARENT
+END
+
+IDD_ACTIONDLG DIALOG DISCARDABLE  0, 0, 187, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Action编辑"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "可选技能：",IDC_STATIC,7,10,40,8
+    COMBOBOX        IDC_SKILLLIST,54,7,126,118,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "将技能设于：",IDC_STATIC,7,41,50,10
+    CONTROL         "左键",IDC_LEFT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    63,41,34,10
+    CONTROL         "右键",IDC_RIGHT,"Button",BS_AUTORADIOBUTTON,112,41,34,
+                    10
+    LTEXT           "瞄准目标：",IDC_STATIC,7,58,40,8
+    COMBOBOX        IDC_TARGETLIST,54,55,126,77,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "该技能冷却时间为：0 毫秒。",IDC_COOLDOWN,7,26,156,8
+    LTEXT           "施放间隔：",IDC_STATIC,7,76,40,8
+    EDITTEXT        IDC_CASTDELAY,54,73,43,14,ES_AUTOHSCROLL
+    LTEXT           "毫秒",IDC_STATIC,100,76,22,8
+    LTEXT           "施放次数：",IDC_STATIC,7,95,40,8
+    EDITTEXT        IDC_REPEAT,54,92,43,14,ES_AUTOHSCROLL
+    LTEXT           "次",IDC_STATIC,100,95,22,8
+    DEFPUSHBUTTON   "确定(&K)",IDOK,44,114,50,14,WS_DISABLED
+    PUSHBUTTON      "取消(&C)",IDCANCEL,94,114,50,14
+END
+
+IDD_INIFILEDLG DIALOG DISCARDABLE  0, 0, 187, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择Pickit配置文件"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "选定(&K)",IDOK,44,116,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,95,116,50,14
+    LISTBOX         IDC_LIST1,7,21,173,86,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "请从列表中选择一个文件，然后点击“选定”：",IDC_STATIC,
+                    7,7,173,11
+END
+
+IDD_MONSTERATTRDLG DIALOG DISCARDABLE  0, 0, 189, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "怪物属性设置"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定(&K)",IDOK,41,62,50,14,WS_DISABLED
+    PUSHBUTTON      "取消(&C)",IDCANCEL,97,62,50,14
+    COMBOBOX        IDC_COMBO1,46,23,136,256,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,46,39,136,247,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "如果boss具有下列属性组合，则退出游戏：",IDC_STATIC,7,7,
+                    154,10
+    LTEXT           "属性一：",IDC_STATIC,7,26,32,10
+    LTEXT           "属性二：",IDC_STATIC,7,41,32,10
+END
+
+IDD_SAFETYDLG DIALOGEX 0, 0, 445, 269
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "角色安全方案 - <>"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "游戏开始时",IDC_STATIC,7,7,197,47
+    CONTROL         "角色生命值低于",IDC_BMALAHHP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,21,69,9
+    EDITTEXT        IDC_MALAHHP,95,19,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_MALAHHP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,161,19,11,11
+    LTEXT           "%，与Malah交谈。",IDC_STATIC,130,21,64,9
+    CONTROL         "角色魔法值低于",IDC_BMALAHMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,37,69,9
+    EDITTEXT        IDC_MALAHMP,95,35,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_MALAHMP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,157,34,11,11
+    LTEXT           "%，与Malah交谈。",IDC_STATIC,130,37,64,9
+    GROUPBOX        "战斗过程中",IDC_STATIC,7,63,197,113
+    CONTROL         "角色生命值低于",IDC_WATCHPOTIONHP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,77,69,9
+    EDITTEXT        IDC_POTIONHP,95,75,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_POTIONHP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,161,73,11,11
+    LTEXT           "%，喝紫药水。",IDC_STATIC,130,77,63,9
+    CONTROL         "角色生命值低于",IDC_BWATCHHP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,93,69,9
+    EDITTEXT        IDC_ALERTHP,95,90,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_ALERTHP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,160,84,11,11
+    LTEXT           "%，立刻退出游戏。",IDC_STATIC,130,92,71,9
+    CONTROL         "角色魔法值低于",IDC_WATCHPOTIONMP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,109,69,9
+    EDITTEXT        IDC_POTIONMP,95,106,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_POTIONMP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,160,97,11,11
+    LTEXT           "%，喝紫药水。",IDC_STATIC,130,108,65,9
+    CONTROL         "角色魔法值低于",IDC_BWATCHMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,125,69,9
+    EDITTEXT        IDC_ALERTMP,95,122,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_ALERTMP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,151,111,11,11
+    LTEXT           "%，立刻退出游戏。",IDC_STATIC,130,124,72,9
+    CONTROL         "雇佣兵生命值低于",IDC_WATCHPOTIONMERC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,141,77,9
+    EDITTEXT        IDC_POTIONMERC,95,138,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_POTIONMERC,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,143,125,11,11
+    CONTROL         "一旦雇佣兵死亡，立刻退出游戏。",IDC_BWATCHMERC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,157,168,9
+    GROUPBOX        "和Pindleskin间的距离",IDC_STATIC,7,186,197,29
+    CONTROL         "正常",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    15,199,32,10
+    CONTROL         "近",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,78,199,24,11
+    CONTROL         "远",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,133,199,24,
+                    11
+    LTEXT           "如果怪物属性符合下列任一项组合时撤离当前游戏：",
+                    IDC_STATIC,211,7,192,9
+    CONTROL         "List1",IDC_ATTRLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_TABSTOP,211,17,227,173,WS_EX_STATICEDGE
+    PUSHBUTTON      "添加组合(&A)",IDC_ADDCOMBO,243,200,56,15
+    PUSHBUTTON      "删除组合(&R)",IDC_REMOVECOMBO,299,200,56,15,WS_DISABLED
+    PUSHBUTTON      "免疫参考(&M)",IDC_IMMUNITY,355,200,56,15
+    LTEXT           "警告：在Lag很严重的状态下，上面的安全措施将不一定能挽救角色。Hardcore玩家请自行斟酌。",
+                    IDC_STATIC,7,226,368,11,0,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "确定(&K)",IDOK,167,247,56,15
+    PUSHBUTTON      "取消(&C)",IDCANCEL,223,247,56,15
+    LTEXT           "%，喂它喝紫药水。",IDC_STATIC,130,140,69,9
+END
+
+IDD_SAFETYSCHEMENAME DIALOG DISCARDABLE  0, 0, 187, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "安全方案名称"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "请根据您自己的喜好随意为新建的安全方案指定一个名称（目的是方便记忆）。名称可为任意英文字母与数字的组合，允许包含下划线和空格。",
+                    IDC_STATIC,7,7,173,25
+    EDITTEXT        IDC_EDIT1,7,39,173,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定(&K)",IDOK,39,62,50,14,WS_DISABLED
+    PUSHBUTTON      "取消(&C)",IDCANCEL,98,62,50,14
+END
+
+IDD_SAFETYPAGE DIALOGEX 0, 0, 214, 255
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "安全"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "已创建的安全方案：",IDC_STATIC,7,7,200,10
+    LISTBOX         IDC_LIST1,7,19,200,205,LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "新增",IDC_NEW,39,234,44,14
+    PUSHBUTTON      "编辑",IDC_EDIT,84,234,44,14,WS_DISABLED
+    PUSHBUTTON      "删除",IDC_DELETE,128,234,44,14,WS_DISABLED
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,5,2,1
+ PRODUCTVERSION 3,5,2,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Abin\0"
+            VALUE "FileDescription", "Pindlebot SIG版\0"
+            VALUE "FileVersion", "3, 5, 2, 1\0"
+            VALUE "InternalName", "Abin Pindlebot\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2003 Abin (abinn32@163.com)\0"
+            VALUE "LegalTrademarks", "Bin Liu\0"
+            VALUE "OriginalFilename", "Pindlebot.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Pindlebot SIG版\0"
+            VALUE "ProductVersion", "3, 5, 2, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_PINDLEBOT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 2
+    END
+
+    IDD_LOGINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_PICKITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    CG_IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_STATISTICSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_ITEMLOGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_CHARCLASSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_NEWCHARDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_ACTIONLISTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_ACTIONDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_INIFILEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_MONSTERATTRDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_SAFETYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 438
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_SAFETYSCHEMENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_SAFETYPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\sorc1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "POPUP_MENU"
+    BEGIN
+        MENUITEM "物品纪录",                    ID_POPUP_ITEMLOG
+        MENUITEM "运行统计",                    ID_POPUP_STATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "设置",                        ID_POPUP_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "使用帮助",                    ID_POPUP_HELP
+        MENUITEM "关于...",                     ID_POPUP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "退出",                        IDC_EXIT
+    END
+END
+
+IDR_ITEMLOG MENU DISCARDABLE 
+BEGIN
+    POPUP "-ItemLog-"
+    BEGIN
+        MENUITEM "复制到剪贴版",                IDC_COPYTOCLIPBOARD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_NEWCHARDLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 7, 0
+0x6d41, 0x7a61, 0x6e6f, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0x7341, 0x6173, 0x7373, 0x6e69, "\000" 
+    IDC_COMBO1, 0x403, 10, 0
+0x6142, 0x6272, 0x7261, 0x6169, 0x006e, 
+    IDC_COMBO1, 0x403, 6, 0
+0x7244, 0x6975, 0x0064, 
+    IDC_COMBO1, 0x403, 12, 0
+0x654e, 0x7263, 0x6d6f, 0x6e61, 0x6563, 0x0072, 
+    IDC_COMBO1, 0x403, 8, 0
+0x6150, 0x616c, 0x6964, 0x006e, 
+    IDC_COMBO1, 0x403, 10, 0
+0x6f53, 0x6372, 0x7265, 0x7365, 0x0073, 
+    0
+END
+
+IDD_ACTIONDLG DLGINIT
+BEGIN
+    IDC_TARGETLIST, 0x403, 9, 0
+0xdece, 0xebd0, 0xe9c3, 0xbcd7, "\000" 
+    IDC_TARGETLIST, 0x403, 15, 0
+0x6950, 0x646e, 0x656c, 0x6b73, 0x6e69, 0xbeb1, 0xedc9, "\000" 
+    IDC_TARGETLIST, 0x403, 15, 0
+0xa9b4, 0xbdd4, 0x6950, 0x646e, 0x656c, 0x6b73, 0x6e69, "\000" 
+    IDC_TARGETLIST, 0x403, 21, 0
+0xc7bd, 0xabc9, 0xebd3, 0x6950, 0x646e, 0x656c, 0x6b73, 0x6e69, 0xaed6, 
+0xe4bc, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDCANCEL                "结束程序运行"
+    IDC_RUN                 "开始使用Pindlebot"
+    IDC_SETTING             "配置各项运行参数"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_ABOUT               "关于..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Pindlebot.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Pindlebot.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

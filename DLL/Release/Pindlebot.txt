@@ -1,0 +1,6 @@
+[Log]
+Running=0
+Game=8
+Warp=1
+Run Time=146
+Fail=3

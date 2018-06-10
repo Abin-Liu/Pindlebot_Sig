@@ -1,0 +1,11 @@
+[Cure-abinsorV]
+Class=6
+Safety Scheme=new sor
+Ammo Type=0
+Ammo Buy Qty=2
+Action0=0
+Action1=0
+Action2=2
+Action20=55,0,1,250,1
+Action21=59,1,1,2500,20
+Action3=0
